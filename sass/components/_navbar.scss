@@ -1,0 +1,48 @@
+nav {
+    font-size: $font-md-1;
+    background-color: $primary;
+
+    .upper-bar {
+        padding: 1em 0;
+        gap: 30px;
+        align-items: center;
+
+        img {
+            width: 40px;
+        }
+
+        .motors {
+            a {
+                justify-content: space-between;
+                align-items: center;
+                width: 90px;
+            }
+
+            .car-icon {
+                background-color: #eceded;
+                border-radius: 50%;
+
+                i {
+                    padding: 0.5em;
+                }
+            }
+        }
+        
+        .property {
+            a {
+                justify-content: space-between;
+                align-items: center;
+                width: 100px;
+            }
+
+            .property-icon {
+                background-color: #eceded;
+                border-radius: 50%;
+
+                i {
+                    padding: 0.5em;
+                }
+            }
+        }
+    }
+}

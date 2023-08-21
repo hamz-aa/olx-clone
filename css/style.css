@@ -20,3 +20,56 @@ ul {
 a {
   text-decoration: none;
 }
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+nav {
+  font-size: 1.4rem;
+  background-color: #f7f8f8;
+}
+nav .upper-bar {
+  padding: 1em 0;
+  gap: 30px;
+  align-items: center;
+}
+nav .upper-bar img {
+  width: 40px;
+}
+nav .upper-bar .motors a {
+  justify-content: space-between;
+  align-items: center;
+  width: 90px;
+}
+nav .upper-bar .motors .car-icon {
+  background-color: #eceded;
+  border-radius: 50%;
+}
+nav .upper-bar .motors .car-icon i {
+  padding: 0.5em;
+}
+nav .upper-bar .property a {
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+}
+nav .upper-bar .property .property-icon {
+  background-color: #eceded;
+  border-radius: 50%;
+}
+nav .upper-bar .property .property-icon i {
+  padding: 0.5em;
+}
