@@ -27,7 +27,7 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1280px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -39,37 +39,78 @@ img {
 
 nav {
   font-size: 1.4rem;
-  background-color: #f7f8f8;
 }
-nav .upper-bar {
+nav .nav-fix {
+  background-color: #f7f8f8;
+  border-bottom: 0 solid #f2f4f5;
+  z-index: 6;
+  position: sticky;
+  top: 0;
+}
+nav .nav-fix .upper-bar {
   padding: 1em 0;
   gap: 30px;
   align-items: center;
 }
-nav .upper-bar img {
-  width: 40px;
+nav .nav-fix .upper-bar img {
+  max-width: 40px;
 }
-nav .upper-bar .motors a {
+nav .nav-fix .upper-bar .motors a {
   justify-content: space-between;
   align-items: center;
   width: 90px;
 }
-nav .upper-bar .motors .car-icon {
+nav .nav-fix .upper-bar .motors .car-icon {
   background-color: #eceded;
   border-radius: 50%;
 }
-nav .upper-bar .motors .car-icon i {
+nav .nav-fix .upper-bar .motors .car-icon i {
   padding: 0.5em;
 }
-nav .upper-bar .property a {
+nav .nav-fix .upper-bar .property a {
   justify-content: space-between;
   align-items: center;
   width: 100px;
 }
-nav .upper-bar .property .property-icon {
+nav .nav-fix .upper-bar .property .property-icon {
   background-color: #eceded;
   border-radius: 50%;
 }
-nav .upper-bar .property .property-icon i {
+nav .nav-fix .upper-bar .property .property-icon i {
   padding: 0.5em;
+}
+nav .nav-fix .mid-bar {
+  align-items: center;
+  justify-content: space-between;
+}
+nav .nav-fix .mid-bar a img {
+  max-width: 80px;
+}
+nav .nav-fix .mid-bar .location-box {
+  border: 2px solid #002f34;
+  max-width: 22%;
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  background-color: #fff;
+  align-items: center;
+}
+nav .nav-fix .mid-bar .location-box select {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  border-color: #fff;
+}
+nav .nav-fix .mid-bar .location-box select:focus {
+  outline: 0;
+}
+nav .nav-fix .mid-bar .search-box {
+  border: 2px solid #002f34;
+  max-width: 54%;
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  background-color: #fff;
+  align-items: center;
 }
