@@ -4,7 +4,7 @@
     width: $base-width;
 }
 
-@mixin box($base-width: 50%){
+@mixin box($base-width: 50%) {
     border: 2px solid $secondary;
     max-width: $base-width;
     width: 100%;
@@ -76,27 +76,49 @@ nav {
             }
 
             .location-box {
-                @include box(22%);
+                @include box(23%);
+                position: relative;
 
-                // i {
-                //     width: 15%;
-                //     // padding-left: 0.7em;
-                //     // border: 1px solid red;
-                //     // left: 10p;
-                //     display: flex;
-                //     justify-content: center;
-                // }
-
-                select {
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    justify-content: center;
-                    border-color: $white;
+                &:hover .loc-sub-menu{
+                    display: block;
                 }
 
-                select:focus{
-                    outline: 0;
+                .loc {
+                    background-color: $white;
+                    height: 45px;
+                    width: 100%;
+                    gap: 15px;
+                    align-items: center;
+                    // padding-left: 10px;
+                }
+
+                .loc1 {
+                    font-size: $font-md-2;
+
+                    p {
+                        width: 70%;
+                    }
+
+                }
+
+                .loc-sub-menu {
+                    display: none;
+                    // overflow: auto;
+
+                    .loc2 {
+                        color: $blue;
+                        font-size: $font-md-2;
+                        font-weight: 600;
+                    }
+
+                    .loc3 {
+                        border-top: 1px solid #ced6d7;
+                        border-bottom: 1px solid #ced6d7;
+                    }
+
+                    .loc4 {
+                        color: #b2b8bb;
+                    }
                 }
             }
 
