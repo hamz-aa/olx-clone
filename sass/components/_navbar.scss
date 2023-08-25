@@ -79,36 +79,59 @@ nav {
                 @include box(23%);
                 position: relative;
 
-                &:hover .loc-sub-menu{
+                &:hover .loc-sub-menu {
                     display: block;
                 }
 
                 .loc {
                     background-color: $white;
                     height: 45px;
-                    width: 100%;
+                    width: 95%;
                     gap: 15px;
                     align-items: center;
-                    // padding-left: 10px;
+                    padding-left: 1rem;
                 }
-
+                
                 .loc1 {
                     font-size: $font-md-2;
-
+                    
                     p {
-                        width: 70%;
+                        width: 72%;
                     }
 
+                    a:hover {
+                        i {
+                            transition: transform 0.2s ease-in-out;
+                            transform: rotate(180deg);
+                        }
+                    }
+                    
                 }
-
+                
                 .loc-sub-menu {
                     display: none;
-                    // overflow: auto;
+                    margin-top: 5px;
+                    overflow: auto;
+                    height: 320px;
+                    border-radius: 3px 0 0 3px;
+                    box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+                    -webkit-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+                    -moz-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+                    cursor: pointer;
+
+                    &>.loc {
+                        height: 60px;
+                    }
+
+                    &>:not(.loc4):hover {
+                        background: $hover-blue;
+                    }
 
                     .loc2 {
                         color: $blue;
                         font-size: $font-md-2;
                         font-weight: 600;
+                        height: 75px;
                     }
 
                     .loc3 {
@@ -124,6 +147,39 @@ nav {
 
             .search-box {
                 @include box(54%);
+                justify-content: space-between;
+                align-items: center;
+                color: #767c80;
+                
+                p, i {
+                    padding: 0 1rem;
+                }
+                
+                p {
+                    font-size: $font-md-2;
+                }
+
+                .search-icon {
+                    color: $white;
+                    background-color: $secondary;
+                    height: 100%;
+                    width: 50px;
+
+                    i {
+                        padding-top: 0.3em;
+                    }
+                }
+            }
+
+            a.login {
+                font-size: $font-md-2;
+                color: $secondary;
+                font-weight: 600;
+                border-bottom: 2px solid $secondary;
+
+                &:hover {
+                    border-bottom: 2px solid $primary;
+                }
             }
         }
     }
