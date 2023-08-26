@@ -26,7 +26,7 @@ nav {
 
 
         .upper-bar {
-            padding: 1em 0;
+            padding-top: 1em;
             gap: 30px;
             align-items: center;
 
@@ -37,6 +37,10 @@ nav {
             .motors {
                 a {
                     @include icon-layout(90px);
+                }
+
+                &:hover {
+                    color: $blue;
                 }
 
                 .car-icon {
@@ -54,6 +58,10 @@ nav {
                     @include icon-layout(100px);
                 }
 
+                &:hover {
+                    color: $blue;
+                }
+
                 .property-icon {
                     background-color: #eceded;
                     border-radius: 50%;
@@ -68,7 +76,7 @@ nav {
         .mid-bar {
             align-items: center;
             justify-content: space-between;
-
+            
             a {
                 img {
                     max-width: 80px;
@@ -76,7 +84,7 @@ nav {
             }
 
             .location-box {
-                @include box(23%);
+                @include box(21%);
                 position: relative;
 
                 &:hover .loc-sub-menu {
@@ -164,6 +172,7 @@ nav {
                     background-color: $secondary;
                     height: 100%;
                     width: 50px;
+                    cursor: pointer;
 
                     i {
                         padding-top: 0.3em;
@@ -179,6 +188,26 @@ nav {
 
                 &:hover {
                     border-bottom: 2px solid $primary;
+                }
+            }
+
+            .main-btn {
+                position: relative;
+                cursor: pointer;
+                
+                .main-btn-content {
+                    position: absolute;
+                    align-items: center;
+                    top: 30%;
+                    left: 20%;   
+                    
+                    button {
+                        background-color: $white;
+                        border: none;
+                        font-weight: 700;
+                        color: $secondary;
+                        cursor: pointer;
+                    }
                 }
             }
         }

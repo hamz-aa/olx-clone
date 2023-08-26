@@ -48,7 +48,7 @@ nav .nav-fix {
   top: 0;
 }
 nav .nav-fix .upper-bar {
-  padding: 1em 0;
+  padding-top: 1em;
   gap: 30px;
   align-items: center;
 }
@@ -59,6 +59,9 @@ nav .nav-fix .upper-bar .motors a {
   justify-content: space-between;
   align-items: center;
   width: 90px;
+}
+nav .nav-fix .upper-bar .motors:hover {
+  color: #3a77ff;
 }
 nav .nav-fix .upper-bar .motors .car-icon {
   background-color: #eceded;
@@ -71,6 +74,9 @@ nav .nav-fix .upper-bar .property a {
   justify-content: space-between;
   align-items: center;
   width: 100px;
+}
+nav .nav-fix .upper-bar .property:hover {
+  color: #3a77ff;
 }
 nav .nav-fix .upper-bar .property .property-icon {
   background-color: #eceded;
@@ -88,7 +94,7 @@ nav .nav-fix .mid-bar a img {
 }
 nav .nav-fix .mid-bar .location-box {
   border: 2px solid #002f34;
-  max-width: 23%;
+  max-width: 21%;
   width: 100%;
   height: 45px;
   border-radius: 5px;
@@ -170,6 +176,7 @@ nav .nav-fix .mid-bar .search-box .search-icon {
   background-color: #002f34;
   height: 100%;
   width: 50px;
+  cursor: pointer;
 }
 nav .nav-fix .mid-bar .search-box .search-icon i {
   padding-top: 0.3em;
@@ -182,4 +189,21 @@ nav .nav-fix .mid-bar a.login {
 }
 nav .nav-fix .mid-bar a.login:hover {
   border-bottom: 2px solid #f7f8f8;
+}
+nav .nav-fix .mid-bar .main-btn {
+  position: relative;
+  cursor: pointer;
+}
+nav .nav-fix .mid-bar .main-btn .main-btn-content {
+  position: absolute;
+  align-items: center;
+  top: 30%;
+  left: 20%;
+}
+nav .nav-fix .mid-bar .main-btn .main-btn-content button {
+  background-color: #fff;
+  border: none;
+  font-weight: 700;
+  color: #002f34;
+  cursor: pointer;
 }
