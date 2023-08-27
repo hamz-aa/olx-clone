@@ -1,0 +1,31 @@
+.olx-category {
+    margin: 3em 0;
+
+    .category-wrapper {
+        h1 {
+            color: $secondary;
+            font-size: $font-lg;
+            margin-bottom: 1em;
+        }
+
+        ul {
+            gap: 5.5rem;
+
+            li {
+                height: 100%;
+
+                img {
+                    height: 90px;
+                }
+
+                p {
+                    color: $black;
+                    font-size: $font-md-2;
+                    font-weight: 600;
+                    text-align: center;
+                    margin-top: 0.5em;
+                }
+            }
+        }
+    }
+}

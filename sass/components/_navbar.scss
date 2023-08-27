@@ -14,227 +14,228 @@
     align-items: center;
 }
 
-nav {
+
+.nav-fix {
     font-size: $font-md-1;
-
-    .nav-fix {
-        background-color: $primary;
-        border-bottom: 0 solid #f2f4f5;
-        z-index: 6;
-        position: sticky;
-        top: 0;
+    background-color: $primary;
+    border-bottom: 0 solid #f2f4f5;
+    position: sticky;
+    top: 0;
+    z-index: 6;
 
 
-        .upper-bar {
-            padding-top: 1em;
-            gap: 30px;
-            align-items: center;
+    .upper-bar {
+        padding-top: 1em;
+        gap: 30px;
+        align-items: center;
 
-            img {
-                max-width: 40px;
+        img {
+            max-width: 40px;
+        }
+
+        .motors {
+            a {
+                @include icon-layout(90px);
             }
 
-            .motors {
-                a {
-                    @include icon-layout(90px);
-                }
-
-                &:hover {
-                    color: $blue;
-                }
-
-                .car-icon {
-                    background-color: #eceded;
-                    border-radius: 50%;
-
-                    i {
-                        padding: 0.5em;
-                    }
-                }
+            &:hover {
+                color: $blue;
             }
 
-            .property {
-                a {
-                    @include icon-layout(100px);
-                }
+            .car-icon {
+                background-color: #eceded;
+                border-radius: 50%;
 
-                &:hover {
-                    color: $blue;
-                }
-
-                .property-icon {
-                    background-color: #eceded;
-                    border-radius: 50%;
-
-                    i {
-                        padding: 0.5em;
-                    }
+                i {
+                    padding: 0.5em;
                 }
             }
         }
 
-        .mid-bar {
-            align-items: center;
-            justify-content: space-between;
-            
+        .property {
             a {
-                img {
-                    max-width: 80px;
-                }
+                @include icon-layout(100px);
             }
 
-            .location-box {
-                @include box(21%);
-                position: relative;
-
-                &:hover .loc-sub-menu {
-                    display: block;
-                }
-
-                .loc {
-                    background-color: $white;
-                    height: 45px;
-                    width: 95%;
-                    gap: 15px;
-                    align-items: center;
-                    padding-left: 1rem;
-                }
-                
-                .loc1 {
-                    font-size: $font-md-2;
-                    
-                    p {
-                        width: 72%;
-                    }
-
-                    a:hover {
-                        i {
-                            transition: transform 0.2s ease-in-out;
-                            transform: rotate(180deg);
-                        }
-                    }
-                    
-                }
-                
-                .loc-sub-menu {
-                    display: none;
-                    margin-top: 5px;
-                    overflow: auto;
-                    height: 320px;
-                    border-radius: 3px 0 0 3px;
-                    box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
-                    -webkit-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
-                    -moz-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
-                    cursor: pointer;
-
-                    &>.loc {
-                        height: 60px;
-                    }
-
-                    &>:not(.loc4):hover {
-                        background: $hover-blue;
-                    }
-
-                    .loc2 {
-                        color: $blue;
-                        font-size: $font-md-2;
-                        font-weight: 600;
-                        height: 75px;
-                    }
-
-                    .loc3 {
-                        border-top: 1px solid #ced6d7;
-                        border-bottom: 1px solid #ced6d7;
-                    }
-
-                    .loc4 {
-                        color: #b2b8bb;
-                    }
-                }
+            &:hover {
+                color: $blue;
             }
 
-            .search-box {
-                @include box(54%);
-                justify-content: space-between;
-                align-items: center;
-                color: #767c80;
-                
-                p, i {
-                    padding: 0 1rem;
-                }
-                
-                p {
-                    font-size: $font-md-2;
-                }
+            .property-icon {
+                background-color: #eceded;
+                border-radius: 50%;
 
-                .search-icon {
-                    color: $white;
-                    background-color: $secondary;
-                    height: 100%;
-                    width: 50px;
-                    cursor: pointer;
-
-                    i {
-                        padding-top: 0.3em;
-                    }
-                }
-            }
-
-            a.login {
-                font-size: $font-md-2;
-                color: $secondary;
-                font-weight: 600;
-                border-bottom: 2px solid $secondary;
-
-                &:hover {
-                    border-bottom: 2px solid $primary;
-                }
-            }
-
-            .main-btn {
-                position: relative;
-                cursor: pointer;
-                
-                .main-btn-content {
-                    position: absolute;
-                    align-items: center;
-                    top: 30%;
-                    left: 20%;   
-                    
-                    button {
-                        background-color: $white;
-                        border: none;
-                        font-weight: 700;
-                        color: $secondary;
-                        cursor: pointer;
-                    }
+                i {
+                    padding: 0.5em;
                 }
             }
         }
     }
 
-    .bottom-bar {
-        height: 50px;
-        box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
+    .mid-bar {
+        align-items: center;
+        justify-content: space-between;
 
-        ul {
-            align-items: center;
-            gap: 20px;
-            height: 50px;
+        a {
+            img {
+                max-width: 80px;
+            }
+        }
 
-            &>a:first-child>div {
+        .location-box {
+            @include box(21%);
+            position: relative;
+
+            &:hover .loc-sub-menu {
+                display: block;
+            }
+
+            .loc {
+                background-color: $white;
+                height: 45px;
+                width: 95%;
+                gap: 15px;
                 align-items: center;
-                gap: 10px;
+                padding-left: 1rem;
+            }
 
-                &>li {
-                    color: $secondary;
+            .loc1 {
+                font-size: $font-md-2;
+
+                p {
+                    width: 72%;
+                }
+
+                a:hover {
+                    i {
+                        transition: transform 0.2s ease-in-out;
+                        transform: rotate(180deg);
+                    }
+                }
+
+            }
+
+            .loc-sub-menu {
+                display: none;
+                margin-top: 5px;
+                overflow: auto;
+                height: 320px;
+                border-radius: 3px 0 0 3px;
+                box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+                -webkit-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+                cursor: pointer;
+
+                &>.loc {
+                    height: 60px;
+                }
+
+                &>:not(.loc4):hover {
+                    background: $hover-blue;
+                }
+
+                .loc2 {
+                    color: $blue;
+                    font-size: $font-md-2;
                     font-weight: 600;
+                    height: 75px;
+                }
+
+                .loc3 {
+                    border-top: 1px solid #ced6d7;
+                    border-bottom: 1px solid #ced6d7;
+                }
+
+                .loc4 {
+                    color: #b2b8bb;
                 }
             }
+        }
 
-            &>:not(a:first-child):hover {
-                color: #00b8da;
+        .search-box {
+            @include box(54%);
+            justify-content: space-between;
+            align-items: center;
+            color: #767c80;
+
+            p,
+            i {
+                padding: 0 1rem;
             }
+
+            p {
+                font-size: $font-md-2;
+            }
+
+            .search-icon {
+                color: $white;
+                background-color: $secondary;
+                height: 100%;
+                width: 50px;
+                cursor: pointer;
+
+                i {
+                    padding-top: 0.3em;
+                }
+            }
+        }
+
+        a.login {
+            font-size: $font-md-2;
+            color: $secondary;
+            font-weight: 600;
+            border-bottom: 2px solid $secondary;
+
+            &:hover {
+                border-bottom: 2px solid $primary;
+            }
+        }
+
+        .main-btn {
+            position: relative;
+            cursor: pointer;
+
+            .main-btn-content {
+                position: absolute;
+                align-items: center;
+                top: 30%;
+                left: 20%;
+
+                button {
+                    background-color: $white;
+                    border: none;
+                    font-weight: 700;
+                    color: $secondary;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.bottom-bar {
+
+    font-size: $font-md-1;
+    height: 50px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .1);
+
+    ul {
+        align-items: center;
+        gap: 20px;
+        height: 50px;
+
+        &>a:first-child>div {
+            align-items: center;
+            gap: 10px;
+
+            &>li {
+                color: $secondary;
+                font-weight: 600;
+            }
+        }
+
+        &>:not(a:first-child):hover {
+            color: #00b8da;
         }
     }
 }
