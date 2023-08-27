@@ -207,3 +207,33 @@ nav .nav-fix .mid-bar .main-btn .main-btn-content button {
   color: #002f34;
   cursor: pointer;
 }
+nav .bottom-bar {
+  height: 50px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+}
+nav .bottom-bar ul {
+  align-items: center;
+  gap: 20px;
+  height: 50px;
+}
+nav .bottom-bar ul > a:first-child > div {
+  align-items: center;
+  gap: 10px;
+}
+nav .bottom-bar ul > a:first-child > div > li {
+  color: #002f34;
+  font-weight: 600;
+}
+nav .bottom-bar ul > :not(a:first-child):hover {
+  color: #00b8da;
+}
+
+.landing-image {
+  margin: 2em auto;
+  height: 180px;
+  border: 2px solid red;
+  background-image: url("../../img/295176473-800x600.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

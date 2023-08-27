@@ -212,4 +212,29 @@ nav {
             }
         }
     }
+
+    .bottom-bar {
+        height: 50px;
+        box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
+
+        ul {
+            align-items: center;
+            gap: 20px;
+            height: 50px;
+
+            &>a:first-child>div {
+                align-items: center;
+                gap: 10px;
+
+                &>li {
+                    color: $secondary;
+                    font-weight: 600;
+                }
+            }
+
+            &>:not(a:first-child):hover {
+                color: #00b8da;
+            }
+        }
+    }
 }
