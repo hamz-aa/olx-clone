@@ -262,3 +262,54 @@ img {
   text-align: center;
   margin-top: 0.5em;
 }
+
+.cards .card-wrapper h1 {
+  color: #002f34;
+  font-size: 2.4rem;
+  margin-bottom: 1em;
+}
+.cards .card-wrapper .card-row .card {
+  height: 310px;
+  width: 300px;
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.4rem;
+}
+.cards .card-wrapper .card-row .card .img-container {
+  background: url("../../img/iphone12.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50%;
+}
+.cards .card-wrapper .card-row .card .img-content {
+  padding: 1em;
+}
+.cards .card-wrapper .card-row .card .img-content .first-line {
+  justify-content: space-between;
+}
+.cards .card-wrapper .card-row .card .img-content .first-line h1 {
+  font-size: 1.6rem;
+  color: #002f34;
+  font-weight: 600;
+}
+.cards .card-wrapper .card-row .card .img-content .first-line i {
+  font-size: 2rem;
+}
+.cards .card-wrapper .card-row .card .img-content p:nth-last-child(3) {
+  font-size: 1.6rem;
+  color: #002f34;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+.cards .card-wrapper .card-row .card .img-content p:nth-last-child(2) {
+  font-size: 1.4rem;
+  color: #406367;
+  margin-bottom: 0.5em;
+}
+.cards .card-wrapper .card-row .card .img-content p:last-child {
+  font-size: 1.2rem;
+  color: #406367;
+  margin-bottom: 0.5em;
+}
