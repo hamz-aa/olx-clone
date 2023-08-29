@@ -1,9 +1,48 @@
+@mixin card-img ($url) {
+    background: url($url);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+}
+
 .cards {
     .card-wrapper {
         h1 {
             color: $secondary;
             font-size: $font-lg;
-            margin-bottom: 1em;
+            margin: 1em 0;
+        }
+
+        .card-row-1 {
+            .img-container {
+                @include card-img('../../img/iphone12.jpg');
+            }
+        }
+        .card-row-2 {
+            .img-container {
+                @include card-img('../../img/toyota.jpg');
+            }
+        }
+        .card-row-3 {
+            .img-container {
+                @include card-img('../../img/iphone12.jpg');
+            }
+        }
+        .card-row-4 {
+            .img-container {
+                @include card-img('../../img/iphone12.jpg');
+            }
+        }
+        .card-row-5 {
+            .img-container {
+                @include card-img('../../img/iphone12.jpg');
+            }
+        }
+        .card-row-6 {
+            .img-container {
+                @include card-img('../../img/iphone12.jpg');
+            }
         }
 
         .card-row {
@@ -14,14 +53,15 @@
                 border: 1px solid #ddd;
                 border-radius: 5px;
                 font-size: $font-md-1;
+                gap: 25px;
 
-                .img-container {
-                    background: url('../../img/iphone12.jpg');
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    height: 50%;
-                }
+                // .img-container {
+                //     background: url('../../img/iphone12.jpg');
+                //     background-position: center;
+                //     background-repeat: no-repeat;
+                //     background-size: cover;
+                //     height: 50%;
+                // }
 
                 .img-content {
                     padding: 1em;
