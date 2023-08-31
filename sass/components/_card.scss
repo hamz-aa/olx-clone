@@ -26,28 +26,33 @@
         }
         .card-row-3 {
             .img-container {
-                @include card-img('../../img/iphone12.jpg');
+                @include card-img('../../img/honda.jpg');
             }
         }
         .card-row-4 {
             .img-container {
-                @include card-img('../../img/iphone12.jpg');
+                @include card-img('../../img/house.jpg');
             }
         }
         .card-row-5 {
             .img-container {
-                @include card-img('../../img/iphone12.jpg');
+                @include card-img('../../img/tv.jpg');
             }
         }
         .card-row-6 {
             .img-container {
-                @include card-img('../../img/iphone12.jpg');
+                @include card-img('../../img/tablet.jpg');
+            }
+        }
+        .card-row-7 {
+            .img-container {
+                @include card-img('../../img/job.jpg');
             }
         }
 
         .card-row {
             .card {
-                height: 310px;
+                height: 320px;
                 width: 300px;
                 display: block;
                 border: 1px solid #ddd;
@@ -80,24 +85,29 @@
                         }
                     }
 
-                    p:nth-last-child(3) {
+                    .extra-info {
+                        color: #4c6567;
+                        gap: 0.6em;
+                        font-weight: 600;
+                    }
+
+                    &>p:nth-last-of-type(3) {
                         font-size: $font-md-2;
                         color: $secondary;
                         font-weight: 400;
                         margin-bottom: 1em;
                     }
 
-                    p:nth-last-child(2) {
+                    &>p:nth-last-child(2) {
                         font-size: $font-md-1;
                         color: #406367;
                         margin-bottom: 0.5em;
                     }
                     
-                    p:last-child {
+                    &>p:last-child {
                         font-size: 1.2rem;
                         color: #406367;
                         margin-bottom: 0.5em;
-
                     }
                 }
             }
