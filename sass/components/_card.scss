@@ -16,36 +16,68 @@
             margin-bottom: 1em;
         }
 
+        .btn-top-wrapper {
+            position: sticky;
+            z-index: 6;
+            top: 150px;
+            margin-top: 10px;
+            font-size: $font-md-1;
+            font-weight: 600;
+            gap: 0.5em;
+            color: $secondary;
+            border: 1px solid $secondary;
+            width: fit-content;
+            padding: 0.7em 1.5em;
+            border-radius: 20px;
+            cursor: pointer;
+            background-color: $white;
+            left: 45%;
+
+            &:hover {
+                border: 3px solid $secondary;
+            }
+
+            i {
+                font-size: 1.8rem
+            }
+        }
+
         .card-row-1 {
             .img-container {
                 @include card-img('../../img/iphone12.jpg');
             }
         }
+
         .card-row-2 {
             .img-container {
                 @include card-img('../../img/toyota.jpg');
             }
         }
+
         .card-row-3 {
             .img-container {
                 @include card-img('../../img/honda.jpg');
             }
         }
+
         .card-row-4 {
             .img-container {
                 @include card-img('../../img/house.jpg');
             }
         }
+
         .card-row-5 {
             .img-container {
                 @include card-img('../../img/tv.jpg');
             }
         }
+
         .card-row-6 {
             .img-container {
                 @include card-img('../../img/tablet.jpg');
             }
         }
+
         .card-row-7 {
             .img-container {
                 @include card-img('../../img/job.jpg');
@@ -69,13 +101,13 @@
                         justify-content: space-between;
                         align-items: center;
                         margin: 0.7em auto;
-                        
+
                         h1 {
                             font-size: $font-md-2;
                             color: $secondary;
                             font-weight: 600;
                         }
-                        
+
                         i {
                             font-size: 2rem;
                         }
@@ -100,7 +132,7 @@
                         color: #406367;
                         margin-bottom: 0.5em;
                     }
-                    
+
                     &>p:last-child {
                         font-size: 1.2rem;
                         color: #406367;

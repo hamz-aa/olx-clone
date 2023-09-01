@@ -290,6 +290,29 @@ img {
   margin-top: 2em;
   margin-bottom: 1em;
 }
+.cards .card-wrapper .btn-top-wrapper {
+  position: sticky;
+  z-index: 6;
+  top: 150px;
+  margin-top: 10px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  gap: 0.5em;
+  color: #002f34;
+  border: 1px solid #002f34;
+  width: fit-content;
+  padding: 0.7em 1.5em;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #fff;
+  left: 45%;
+}
+.cards .card-wrapper .btn-top-wrapper:hover {
+  border: 3px solid #002f34;
+}
+.cards .card-wrapper .btn-top-wrapper i {
+  font-size: 1.8rem;
+}
 .cards .card-wrapper .card-row-1 .img-container {
   background: url("../../img/iphone12.jpg");
   background-position: center;
