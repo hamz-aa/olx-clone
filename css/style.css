@@ -416,3 +416,44 @@ img {
   color: #406367;
   margin-bottom: 0.5em;
 }
+
+.last-sec {
+  margin-top: 6em;
+  background-color: rgba(0, 47, 52, 0.03);
+  color: #002f34;
+}
+.last-sec .row-wrapper > div {
+  flex: 1 1 32%;
+}
+.last-sec .row-wrapper .img-content {
+  text-align: left;
+}
+.last-sec .row-wrapper .img-content .img-content-wrapper {
+  border-right: 2px solid #c6cfd1;
+  width: fit-content;
+  margin-top: 4em;
+  padding-right: 2.2em;
+}
+.last-sec .row-wrapper .img-content .img-content-wrapper h1 {
+  font-size: 3.2rem;
+  margin-bottom: 0.6em;
+  padding-top: 0.4em;
+}
+.last-sec .row-wrapper .img-content .img-content-wrapper p {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  padding-bottom: 0.6em;
+}
+.last-sec .row-wrapper .social-apps p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 5.2em;
+  margin-bottom: 1em;
+}
+.last-sec .row-wrapper .social-apps .row {
+  gap: 10px;
+}
+.last-sec .row-wrapper .social-apps .row img {
+  height: 36px;
+  cursor: pointer;
+}
