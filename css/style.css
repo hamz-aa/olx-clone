@@ -506,3 +506,18 @@ footer .top-footer .top-footer-wrapper ul:last-child .social-apps img {
   cursor: pointer;
   height: 25px;
 }
+footer .bottom-footer {
+  background-color: #002F34;
+  color: #fff;
+  font-size: 1.2rem;
+}
+footer .bottom-footer .bottom-wrapper {
+  justify-content: flex-end;
+}
+footer .bottom-footer p {
+  padding: 1.5em 0;
+  width: fit-content;
+}
+footer .bottom-footer p span:first-child {
+  font-weight: 600;
+}

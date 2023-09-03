@@ -60,6 +60,21 @@ footer {
     }
 
     .bottom-footer {
-        
+        background-color: #002F34;
+        color: $white;
+        font-size: 1.2rem;
+
+        .bottom-wrapper {
+            justify-content: flex-end;
+        }
+
+        p {
+            padding: 1.5em 0;
+            width: fit-content;
+
+            span:first-child {
+                font-weight: 600;
+            }
+        }        
     }
 }
