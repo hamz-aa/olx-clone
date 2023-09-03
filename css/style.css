@@ -432,7 +432,7 @@ img {
   border-right: 2px solid #c6cfd1;
   width: fit-content;
   margin-top: 4em;
-  padding-right: 2.2em;
+  padding-right: 2.8em;
 }
 .last-sec .row-wrapper .img-content .img-content-wrapper h1 {
   font-size: 3.2rem;
@@ -456,4 +456,53 @@ img {
 .last-sec .row-wrapper .social-apps .row img {
   height: 36px;
   cursor: pointer;
+}
+
+footer .top-footer {
+  background-color: #ebeeef;
+  padding: 1.6rem 0 6.4rem;
+  border-top: 1px solid rgba(0, 47, 52, 0.2);
+}
+footer .top-footer .top-footer-wrapper {
+  justify-content: space-between;
+}
+footer .top-footer .top-footer-wrapper li:first-child {
+  font-size: 1.4rem;
+  color: #002f34;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+footer .top-footer .top-footer-wrapper li:not(first-child) {
+  font-size: 1.2rem;
+  color: #557477;
+  margin-bottom: 0.6em;
+}
+footer .top-footer .top-footer-wrapper li:not(first-child):hover {
+  color: #222a2b;
+}
+footer .top-footer .top-footer-wrapper ul:last-child {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+footer .top-footer .top-footer-wrapper ul:last-child .icons-wrapper {
+  width: fit-content;
+}
+footer .top-footer .top-footer-wrapper ul:last-child li {
+  margin-bottom: 0.2em;
+}
+footer .top-footer .top-footer-wrapper ul:last-child .social-icons {
+  gap: 8px;
+}
+footer .top-footer .top-footer-wrapper ul:last-child .social-icons img {
+  cursor: pointer;
+  height: 25px;
+}
+footer .top-footer .top-footer-wrapper ul:last-child .social-apps {
+  margin-top: 3.5em;
+  gap: 8px;
+}
+footer .top-footer .top-footer-wrapper ul:last-child .social-apps img {
+  cursor: pointer;
+  height: 25px;
 }
