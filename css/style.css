@@ -521,3 +521,12 @@ footer .bottom-footer p {
 footer .bottom-footer p span:first-child {
   font-weight: 600;
 }
+
+.login-menu {
+  margin: 0 auto;
+  width: fit-content;
+  border: 2px solid red;
+}
+.login-menu img {
+  height: 100px;
+}
